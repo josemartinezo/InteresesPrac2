@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Capital"
+        android:ems="10"
+        android:id="@+id/inputCap"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/separator"
+        android:layout_below="@+id/inputCap"
+        android:layout_alignStart="@+id/inputCap"
+        android:layout_alignLeft="@+id/inputCap"
+        android:layout_alignRight="@+id/inputCap"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="% Porcentaje"
+        android:ems="10"
+        android:id="@+id/inputPercentage"
+        android:layout_below="@+id/separator"
+        android:layout_alignStart="@+id/inputCap"
+        android:layout_alignLeft="@+id/inputCap"
+        android:layout_alignRight="@+id/inputCap"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/separator1"
+        android:layout_below="@+id/inputPercentage"
+        android:layout_alignStart="@+id/inputCap"
+        android:layout_alignLeft="@+id/inputCap"
+        android:layout_alignRight="@+id/inputCap"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="# Periodos"
+        android:ems="10"
+        android:id="@+id/inputPeriodos"
+        android:layout_below="@+id/separator1"
+        android:layout_alignStart="@+id/inputCap"
+        android:layout_alignLeft="@+id/inputCap"
+        android:layout_alignRight="@+id/inputCap"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:id="@+id/btnCal"
+        android:layout_below="@+id/inputPeriodos"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/separator2"
+        android:layout_below="@+id/btnCal"
+        android:layout_alignStart="@+id/inputCap"
+        android:layout_alignLeft="@+id/inputCap"
+        android:layout_alignRight="@+id/inputCap"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtRes"
+        android:layout_below="@+id/separator2"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtRes1"
+        android:layout_below="@+id/txtRes"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
